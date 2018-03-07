@@ -4,11 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.feazesa</groupId>
-	<artifactId>jsf-primefaces-spring-boot</artifactId>
+	<artifactId>application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	
-	<name>joinfaces-spring-boot</name>
 	<description>Joinfaces using PrimeFaces with Spring Boot</description>
 	<url>https://github.com/felipeazv/joinfaces-springboot</url>
 	
@@ -49,6 +48,7 @@
 
 
 	<build>
+	    <finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
