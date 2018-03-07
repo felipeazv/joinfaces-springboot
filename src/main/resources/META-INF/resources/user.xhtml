@@ -11,7 +11,7 @@
 <h:body>
   <h:form id="user">
 
-    <p:panel header="Joinfaces using PrimeFaces and Spring Boot">
+    <p:panel header="Joinfaces using PrimeFaces and Spring Boot on AWS Beanstalk">
       <h:panelGrid columns="2" cellpadding="4">
         <h:outputText value="First Name: " />
         <p:inputText id="first-name" value="#{user.firstName}" />
@@ -27,7 +27,7 @@
     <p:dialog header="Greeting" widgetVar="greetingDialog"
       modal="true" resizable="false">
       <h:panelGrid id="greeting" columns="1" cellpadding="4">
-        <h:outputText value="#{user.showGreeting()}" />
+        <h:outputText value="#{user.helloUser()}" />
       </h:panelGrid>
     </p:dialog>
 

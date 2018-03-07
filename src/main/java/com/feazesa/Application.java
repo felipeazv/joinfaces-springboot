@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import lombok.Data;
-
 @SpringBootApplication
 public class Application {
 
@@ -23,14 +21,3 @@ public class Application {
 	
 }
 
-@Data
-@ManagedBean
-class HelloWorld {
-
-  private String firstName = "Felipe";
-  private String lastName = "Azevedo";
-
-  public String showGreeting() {
-    return "Hello " + firstName + " " + lastName + "!";
-  }
-}

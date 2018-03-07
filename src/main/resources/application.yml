@@ -1,3 +1,3 @@
 server:
-  context-path: /user
+  context-path: /feazesa
   port: 5000
