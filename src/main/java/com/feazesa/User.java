@@ -1,4 +1,6 @@
+package com.feazesa;
 
+import javax.annotation.ManagedBean;
 import lombok.Data;
 
 @Data
