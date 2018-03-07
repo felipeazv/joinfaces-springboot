@@ -14,11 +14,15 @@
     <p:panel header="Joinfaces using PrimeFaces and Spring Boot on AWS Beanstalk">
       <h:panelGrid columns="2" cellpadding="4">
         <h:outputText value="First Name: " />
-        <p:inputText id="first-name" value="#{user.firstName}" />
-
+        <p:inputText id="first-name" value="#{user.firstName}" required="true" />
+        <p:message for="first-name" />
+        <h:outputText value="#{user.text}" />
+        
         <h:outputText value="Last Name: " />
-        <p:inputText id="last-name" value="#{user.lastName}" />
-
+        <p:inputText id="last-name" value="#{user.lastName}" required="true" />
+        <p:message for="last-name" />
+        <h:outputText value="#{user.text}" />
+        
         <p:commandButton id="submit" value="Submit" update="greeting"
           oncomplete="PF('greetingDialog').show()" />
       </h:panelGrid>
